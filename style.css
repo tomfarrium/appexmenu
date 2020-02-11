@@ -1,0 +1,51 @@
+body {
+    background-color: #4d4b4b;
+    color: aliceblue;
+}
+.sidenav {
+    z-index: 1;
+
+    width: 22px;
+    height: 22px;
+    overflow: hidden;
+    background-color: #4d4b4b;
+    transition: 0.5s;
+    border-bottom: #fff;
+    border: 1px;
+    border-color: #fff;
+
+  }
+
+
+  #navigation {
+    border: 1px;
+    border-style: solid;
+    margin: auto;
+    color: aliceblue;
+    display: block;
+}
+
+#navigation ul
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#navigation ul li
+{
+    list-style-type: none;
+    color: #fff;
+}
+
+#navigation li:not(:first-child):before {
+    content: " • ";
+    margin: 0px;
+}
+#haider {
+ display: none;
+}
+#mySidenav {
+  width: 22px;
+  height: 22px;
+}
