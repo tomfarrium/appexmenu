@@ -1,24 +1,16 @@
 <html>
-<head><!-----script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"----></!-----script>
-<title>New page.</title>
+<head><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<title>New page.</title><script></script>
 
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <script>
-function navopenclose() {
-  if (document.getElementById("mySidenav").style.width == "22px") {
-    document.getElementById("mySidenav").style.width = "600px";
-    document.getElementById("mySidenav").style.height = "200px";
-    console.log="ok";
-  } else {
-    document.getElementById("mySidenav").style.width = "22px";
-    document.getElementById("mySidenav").style.height = "22px";
-  }
+function openNav() {
+  document.getElementById("mySidenav").style.width = "600px";
 }
 
-  function closeNav() {
-  document.getElementById("mySidenav").style.width = "22px";
-  document.getElementById("mySidenav").style.height = "22px";
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
 </script>
 </head>
@@ -27,18 +19,17 @@ function navopenclose() {
 <div id="menu"></div>
 <div id="tbody">
 
-<div id="mySidenav" class="sidenav" style="width: 22px;">
+<div id="mySidenav" class="sidenav">
     <div id="navigation">
-    <ul ><a href=# onClick="navopenclose();"><img width="20px" src="apps-24px.svg"></a>
-        <li>Menu</li>
+    <ul ><span style="font-size:30px;cursor:pointer" onclick="openNav()">menu</span>
+        <li></li>
         <li>first</li>
     </li>
         <li>second</li>
-        <li> <a href=# onClick="closeNav();">&times;</a></li>
+        <li> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
     </ul>
 </div>
 </div>
 </div>
-<div><!---------img src="test.png"--------></div>
 </body>
 </html>
