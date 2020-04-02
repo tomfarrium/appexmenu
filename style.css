@@ -16,23 +16,13 @@ body {
 
   }
 
-
-  #navigation {
-    border: 1px;
-    border-style: solid;
-    margin: auto;
-    color: aliceblue;
-    display: block;
-}
-
-#navigation ul
+#mySidenav ul
 {
     margin: 0;
     padding: 0;
-    
 }
 
-#navigation ul li
+#mySidenav ul li
 {
     list-style-type: none;
     color: #fff;
@@ -48,4 +38,7 @@ body {
 #mySidenav {
   width: 22px;
   height: 22px;
+  border: 1px;
+  border-style: solid;
+  border-color: #fff;
 }
